@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "jest": "^27.5.1",
+    "prompt-sync": "^4.2.0"
+  },
+  "name": "towerjs",
+  "version": "1.0.0",
+  "description": "jest",
+  "main": "Tower.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC"
+}
