@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type = "text/css" href="./Tower.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <title>Tower Builder</title>
+</head>
+<body>
+    <div class="alert alert-primary text-center" role="alert">
+        Выберете количество этажей вашей башни! <strong>Количество этажей (n > 1).</strong>
+      </div>
+    <div class="container main">
+        <div>  
+            <input class="mb-2" type="number" id="quantity"  name="quantity" min="1" max="100" value="1" onkeypress="return false" >
+            <button id="start">Построить!</button>
+        </div>  
+        <div>
+            <button class="mb-2" id="save">Сохранить в базу данных.</button>
+            <button id="clear">Очистить базу данных.</button>
+        </div>
+     
+        <textarea class="field" wrap="off" id="field" readonly></textarea>  
+    </div>
+</body>
+<script type="module" src="./Tower.js"></script>
+</html>

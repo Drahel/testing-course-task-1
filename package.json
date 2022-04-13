@@ -1,15 +1,35 @@
 {
-  "dependencies": {
-    "jest": "^27.5.1",
-    "prompt-sync": "^4.2.0"
-  },
   "name": "towerjs",
   "version": "1.0.0",
-  "description": "jest",
-  "main": "Tower.js",
+  "description": "",
+  "main": "Tower.js" ,
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "jest": "^27.5.1",
+    "jest-cucumber": "^3.0.1",
+    "node-sass": "^7.0.1",
+    "pptr-testing-library": "^0.7.0",
+    "puppeteer": "^13.5.2",
+    "supertest": "^6.2.2",
+    "jest-puppeteer": "^6.1.0"
+  },
   "scripts": {
     "test": "jest"
   },
-  "author": "",
-  "license": "ISC"
+  "jest": {
+    "testMatch": [
+      "**/*.test.js",
+      "**/*.e2e.js"
+    ],
+    "globalSetup": "jest-environment-puppeteer/setup",
+    "globalTeardown": "jest-environment-puppeteer/teardown",
+    "testEnvironment": "jsdom",
+    "testTimeout": 35000
+  },
+  "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "jest-environment-puppeteer": "^6.0.3"
+  }
 }
